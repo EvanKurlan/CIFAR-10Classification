@@ -1,0 +1,192 @@
+{
+  "dataset_audit": {
+    "image_count": 60000,
+    "stored_image_shape": [
+      3072
+    ],
+    "image_dimensions": [
+      3,
+      32,
+      32
+    ],
+    "image_dtype": "uint8",
+    "target_dtype": "int64",
+    "target_type": "categorical (10 class labels)",
+    "missing_image_values": 0,
+    "missing_targets": 0,
+    "invalid_targets": 0,
+    "duplicate_image_groups": 0,
+    "duplicate_excess_images": 0,
+    "pixel_min": 0,
+    "pixel_max": 255,
+    "pixels_outside_uint8_range": 0,
+    "target_distribution": {
+      "airplane": 6000,
+      "automobile": 6000,
+      "bird": 6000,
+      "cat": 6000,
+      "deer": 6000,
+      "dog": 6000,
+      "frog": 6000,
+      "horse": 6000,
+      "ship": 6000,
+      "truck": 6000
+    }
+  },
+  "official_splits": {
+    "training_images": 50000,
+    "official_test_images_reserved": 10000
+  },
+  "validation_design": {
+    "source": "official training split only",
+    "train_images": 40000,
+    "validation_images": 10000,
+    "strategy": "80/20 stratified holdout",
+    "random_state": 42
+  },
+  "baseline": {
+    "model": "DummyClassifier(strategy='most_frequent')",
+    "predicted_class": "airplane",
+    "accuracy": 0.1,
+    "macro_precision": 0.01,
+    "macro_recall": 0.1,
+    "macro_f1": 0.01818181818181818,
+    "confusion_matrix": [
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "class_order": [
+      "airplane",
+      "automobile",
+      "bird",
+      "cat",
+      "deer",
+      "dog",
+      "frog",
+      "horse",
+      "ship",
+      "truck"
+    ],
+    "misclassified_images_by_predicted_class": {
+      "airplane": 9000
+    }
+  }
+}
